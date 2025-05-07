@@ -1,6 +1,6 @@
 import java.util.Scanner;
 
-public class Main {
+public class PGen {
     public static void main(String[] args) {
         System.out.println("=================================================================  ");
         System.out.println("    _____               ______      _______    ______    ___       ");
