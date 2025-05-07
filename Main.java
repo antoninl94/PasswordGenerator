@@ -13,21 +13,23 @@ public class Main {
         System.out.println("               Password Generator                 ");
         System.out.println("=================================================");
         while (true) {
-            generator();
+            Scanner scanner = new Scanner(System.in);
+            generator(scanner);
         }
     }
 
-    public static void generator() {
+    public static void generator(Scanner scanner) {
         String baseString = "0123456789";
         StringBuilder deco = new StringBuilder("<-----");
         String uppercaseString = "ABCDEFGHIJKLMNOPQRSTUVWXYZ";
         String lowercaseString = "abcdefghijklmnopqrstuvwxyz";
         String specialString = "!@#$%^&*()-_=+<>?/";
-        int length = passwordLength();
+        int length = passwordLength(scanner);
+        scanner.nextLine();
         int dif = 16 - length;
-        boolean uppercase = uppercaseChar();
-        boolean lowercase = lowercaseChar();
-        boolean special = specialChar();
+        boolean uppercase = uppercaseChar(scanner);
+        boolean lowercase = lowercaseChar(scanner);
+        boolean special = specialChar(scanner);
         StringBuilder password = new StringBuilder(length);
 
         if (uppercase) {
@@ -53,8 +55,7 @@ public class Main {
         System.out.println("\n=========================================================\n");
     }
 
-    public static int passwordLength() {
-        Scanner scanner = new Scanner(System.in);
+    public static int passwordLength(Scanner scanner) {
         // récupère la longueur du mot de passe définie par l'utilisateur
         do {
             // récupère l'input de l'utilisateur
@@ -69,9 +70,8 @@ public class Main {
         } while (true);
     }
 
-    public static boolean uppercaseChar() {
+    public static boolean uppercaseChar(Scanner scanner) {
         // définit les critères de création du mot de passe
-        Scanner scanner = new Scanner(System.in);
         do {
             // définit si l'utilisateur désire des lettres majuscules
             System.out.print("Inclure des lettres majuscules? (oui/non): ");
@@ -86,9 +86,8 @@ public class Main {
         } while (true);
     }
 
-    public static boolean lowercaseChar() {
-        // définit si l'utilisateur désire des lettres minuscules
-        Scanner scanner = new Scanner(System.in);
+    public static boolean lowercaseChar(Scanner scanner) {
+    // définit si l'utilisateur désire des lettres minuscules
         do {
             System.out.print("Inclure des lettres minuscules? (oui/non): ");
             String input = scanner.nextLine();
@@ -102,8 +101,7 @@ public class Main {
         } while (true);
     }
 
-    public static boolean specialChar() {
-        Scanner scanner = new Scanner(System.in);
+    public static boolean specialChar(Scanner scanner) {
         do {
             // définit si l'utilisateur désire des caractères spéciaux
             System.out.print("Inclure des caractères spéciaux? (oui/non): ");
@@ -115,6 +113,6 @@ public class Main {
             } else {
                 System.out.println("\n----- Veuillez répondre par oui ou par non -----\n");
             }
-        } while(true);
+        } while (true);
     }
 }
