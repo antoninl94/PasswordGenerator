@@ -34,3 +34,43 @@ Il vous permet de créer des mots de passe sécurisés en quelques secondes via 
 2. Éxécutez le fichier :
    ```bash
    java Main
+3. Vous pouvez quitter le programme à tout moment en tapant 'quit'
+
+## 📷 Aperçu
+  ### Page d'accueil
+  ```bash
+  =================================================================  
+      _____               ______      _______    ______    ___       
+     |  __ \\            /____//      ||_____//  | | \ \  | | |  
+     | |__) ||  _____   /// ______    |||____    | | |\ \ | | |    
+     |  ___//  /__/_/  |||  \____\\\  ||___||    | | | \ \| | |
+     | ||              \\\      |||   |||____    | | |  \ \ | | 
+     |_||               \\\____///    ||_____\\  |__|/    \_|/ 
+  
+  =================================================================  
+                        Password Generator                           
+  =================================================================  
+  
+  Bienvenue sur P-Gen,
+  Ceci est un générateur de mot de passe aléatoire.
+  
+  Pour l'utiliser c'est très simple, laissez vous guider.
+  Cela ne prend que quelques secondes !
+
+  A tout moment, tapez 'quit' pour quitter ce programme.
+  ```
+  ### Utilisation
+  ```bash
+  Définissez le nombre de caractères à inclure dans le mot de passe: 12
+  Inclure des lettres majuscules? (oui/non): oui
+  Inclure des lettres minuscules? (oui/non): oui
+  Inclure des caractères spéciaux? (oui/non): non
+  
+  =========================================================
+  
+  -----> Voici votre mot de passe : aQ3bT7wUeK1Z <-----
+  
+  =========================================================
+  ```
+  
+Développé par Antoninl94
