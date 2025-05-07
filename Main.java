@@ -2,16 +2,26 @@ import java.util.Scanner;
 
 public class Main {
     public static void main(String[] args) {
-        System.out.println("=================================================");
-        System.out.println("   _____                                         ");
-        System.out.println("  |  __ \\\\                                       ");
-        System.out.println("  | |__) || _____   __                          ");
-        System.out.println("  |  ___// / _\\ \\\\  \\ \\\\  \\\\//                           ");
-        System.out.println("  | ||    / /__\\ \\\\  \\ \\\\  //                            ");
-        System.out.println("  |_||   / /    \\ \\\\  \\ \\\\//                             ");
-        System.out.println("=================================================");
-        System.out.println("               Password Generator                 ");
-        System.out.println("=================================================");
+        System.out.println("=================================================================  ");
+        System.out.println("    _____               ______      _______    ______    ___       ");
+        System.out.println("   |  __ \\\\            /____//      ||_____//  | | \\ \\  | | |  ");
+        System.out.println("   | |__) ||  _____   /// ______    |||____    | | |\\ \\ | | |    ");
+        System.out.println("   |  ___//  /__/_/  |||  \\____\\\\\\  ||___||    | | | \\ \\| | |");
+        System.out.println("   | ||              \\\\\\      |||   |||____    | | |  \\ \\ | | ");
+        System.out.println("   |_||               \\\\\\____///    ||_____\\\\  |__|/    \\_|/ ");
+        System.out.println();
+        System.out.println("=================================================================  ");
+        System.out.println("                      Password Generator                           ");
+        System.out.println("=================================================================  ");
+        System.out.println();
+        System.out.println("Bienvenue sur P-Gen,\nCeci est un générateur de mot de passe aléatoire.\n");
+        System.out.println("Pour l'utiliser c'est très simple, laissez vous guider.");
+        System.out.println("Cela ne prend que quelques secondes !");
+        System.out.println();
+        System.out.println("A tout moment, tapez 'quit' pour quitter ce programme.");
+        System.out.println();
+        System.out.println("-----------------------------------------------------------------");
+        System.out.println();
         while (true) {
             Scanner scanner = new Scanner(System.in);
             generator(scanner);
@@ -25,7 +35,6 @@ public class Main {
         String lowercaseString = "abcdefghijklmnopqrstuvwxyz";
         String specialString = "!@#$%^&*()-_=+<>?/";
         int length = passwordLength(scanner);
-        scanner.nextLine();
         int dif = 16 - length;
         boolean uppercase = uppercaseChar(scanner);
         boolean lowercase = lowercaseChar(scanner);
@@ -58,14 +67,25 @@ public class Main {
     public static int passwordLength(Scanner scanner) {
         // récupère la longueur du mot de passe définie par l'utilisateur
         do {
-            // récupère l'input de l'utilisateur
             System.out.print("Définissez le nombre de caractères à inclure dans le mot de passe: ");
-            // vérification de l'entrée utilisateur
-            int number = scanner.nextInt();
-            if (number < 8 || number > 16) {
-                System.out.println("\n----- La longueur ne peut être inférieur à 8 et supérieur à 16 -----\n");
-            } else {
-                return number;
+            String input = scanner.nextLine();
+
+            // quitte le programme proprement
+            if (input.equalsIgnoreCase("quit")) {
+                System.out.println("\n----- Au revoir ! -----\n");
+                System.exit(0);
+            }
+
+            try {
+                int number = Integer.parseInt(input);
+
+                if (number < 8 || number > 16) {
+                    System.out.println("\n----- La longueur ne peut être inférieure à 8 et supérieure à 16 -----\n");
+                } else {
+                    return number;
+                }
+            } catch (NumberFormatException e) {
+                System.out.println("\n----- Veuillez entrer un nombre valide -----\n");
             }
         } while (true);
     }
@@ -76,6 +96,13 @@ public class Main {
             // définit si l'utilisateur désire des lettres majuscules
             System.out.print("Inclure des lettres majuscules? (oui/non): ");
             String input = scanner.nextLine();
+
+            // quitte le programme proprement
+            if (input.equalsIgnoreCase("quit")) {
+                System.out.println("Au revoir !");
+                System.exit(0);
+            }
+
             if (input.equalsIgnoreCase("oui")) {
                 return true;
             } else if (input.equalsIgnoreCase("non")) {
@@ -91,6 +118,13 @@ public class Main {
         do {
             System.out.print("Inclure des lettres minuscules? (oui/non): ");
             String input = scanner.nextLine();
+
+            // quitte le programme proprement
+            if (input.equalsIgnoreCase("quit")) {
+                System.out.println("Au revoir !");
+                System.exit(0);
+            }
+            
             if (input.equalsIgnoreCase("oui")) {
                 return true;
             } else if (input.equalsIgnoreCase("non")) {
@@ -106,6 +140,13 @@ public class Main {
             // définit si l'utilisateur désire des caractères spéciaux
             System.out.print("Inclure des caractères spéciaux? (oui/non): ");
             String input = scanner.nextLine();
+            
+            // quitte le programme proprement
+            if (input.equalsIgnoreCase("quit")) {
+                System.out.println("Au revoir !");
+                System.exit(0);
+            }
+
             if (input.equalsIgnoreCase("oui")) {
                 return true;
             } else if (input.equalsIgnoreCase("non")) {
