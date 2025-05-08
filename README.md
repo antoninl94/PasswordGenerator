@@ -1,3 +1,4 @@
+
 # 🔐 P-Gen — Générateur de mot de passe Java
 
 Bienvenue sur **P-Gen**, un générateur de mots de passe aléatoires écrit en Java.  
@@ -19,6 +20,11 @@ Il vous permet de créer des mots de passe sécurisés en quelques secondes via 
 
 ---
 
+## 🖥️ Interface Graphique en Cours de Développement
+Une **interface graphique (GUI)** est actuellement en cours de développement pour améliorer l'expérience utilisateur. L'interface permettra de générer des mots de passe de manière encore plus intuitive et accessible. Plus d'infos à venir !
+
+---
+
 ## 🛠️ Utilisation
 
 ### ✅ Prérequis
@@ -31,7 +37,7 @@ Il vous permet de créer des mots de passe sécurisés en quelques secondes via 
 1. Compilez le fichier `PGen.java` :
    ```bash
    javac PGen.java
-2. Éxécutez le fichier :
+2. Exécutez le fichier :
    ```bash
    java PGen
 3. Vous pouvez quitter le programme à tout moment en tapant 'quit'
@@ -40,12 +46,12 @@ Il vous permet de créer des mots de passe sécurisés en quelques secondes via 
   ### Page d'accueil
   ```bash
   =================================================================  
-      _____               ______      _______    ______    ___       
-     |  __ \\            /____//      ||_____//  | | \ \  | | |  
-     | |__) ||  _____   /// ______    |||____    | | |\ \ | | |    
-     |  ___//  /__/_/  |||  \____\\\  ||___||    | | | \ \| | |
-     | ||              \\\      |||   |||____    | | |  \ \ | | 
-     |_||               \\\____///    ||_____\\  |__|/    \_|/ 
+      _____               ______      _______    _____    ___       
+     |  __ \            /____//      ||_____//  | | \ \  || |  
+     | |__) ||  _____   /// ____     |||____    | | |\ \ || |    
+     |  ___//  /__/_/  |||  \__\\    ||___||    | | | \ \|| |
+     | ||              \\      |||   |||____    | | |  \ \| | 
+     |_||               \\____///    ||_____\   |__|/    \|_/ 
   
   =================================================================  
                         Password Generator                           
