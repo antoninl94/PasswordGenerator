@@ -28,12 +28,12 @@ Il vous permet de créer des mots de passe sécurisés en quelques secondes via 
 
 ### ▶️ Lancer le programme
 
-1. Compilez le fichier `Main.java` :
+1. Compilez le fichier `PGen.java` :
    ```bash
-   javac Main.java
+   javac PGen.java
 2. Éxécutez le fichier :
    ```bash
-   java Main
+   java PGen
 3. Vous pouvez quitter le programme à tout moment en tapant 'quit'
 
 ## 📷 Aperçu
@@ -72,5 +72,6 @@ Il vous permet de créer des mots de passe sécurisés en quelques secondes via 
   
   =========================================================
   ```
+  PS : Le Mot de passe contiendra par défaut des chiffres.
   
 Développé par Antoninl94
