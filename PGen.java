@@ -3,12 +3,12 @@ import java.util.Scanner;
 public class PGen {
     public static void main(String[] args) {
         System.out.println("=================================================================  ");
-        System.out.println("     _____               ______     _______    ______    ___       ");
+        System.out.println("     _____               ______      _______   ______    ___       ");
         System.out.println("    |  __ \\\\            /____//     ||_____//  | | \\ \\  | | |  ");
         System.out.println("    | |__) ||  _____   /// ____     |||____    | | |\\ \\ | | |    ");
         System.out.println("    |  ___//  /__/_/  |||  \\__\\\\\\   ||___||    | | | \\ \\| | |");
         System.out.println("    | ||              \\\\\\      |||  |||____    | | |  \\ \\ | | ");
-        System.out.println("    |_||               \\\\\\____///   ||_____\\\\  |__|/    \\_|/ ");
+        System.out.println("    |_||               \\\\\\____///   ||_____\\\\  |_|/    \\__|_/");
         System.out.println();
         System.out.println("=================================================================  ");
         System.out.println("                      Password Generator                           ");
