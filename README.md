@@ -45,25 +45,27 @@ Une **interface graphique (GUI)** est actuellement en cours de développement po
 ## 📷 Aperçu
   ### Page d'accueil
   ```bash
-  =================================================================  
-      _____               ______      _______    _____    ___       
-     |  __ \             /____//     ||_____//  | | \ \  || |  
-     | |__) ||  _____   /// ____     |||____    | | |\ \ || |    
-     |  ___//  /__/_/  |||  \__\\    ||___||    | | | \ \|| |
-     | ||              \\      |||   |||____    | | |  \ \| | 
-     |_||               \\____///    ||_____\   |__|/    \|_/ 
-  
-  =================================================================  
-                        Password Generator                           
-  =================================================================  
-  
-  Bienvenue sur P-Gen,
-  Ceci est un générateur de mot de passe aléatoire.
-  
-  Pour l'utiliser c'est très simple, laissez vous guider.
-  Cela ne prend que quelques secondes !
+=================================================================  
+     _____               _______      ________  ______    ___      
+    |  __ \\            / /____//    ||_____/_/ | | \ \  | | | 
+    | |__) ||  _____   / / ______    |||____    | | |\ \ | | |   
+    |  ___//  /__/_/  | |  \___ \ \  ||___||    | | | \ \| | |
+    | ||              \ \______| | | |||_____   | | |  \ \ | | 
+    |_||               \________/_/  ||_____\_\ |_|/    \__|_/ 
 
-  A tout moment, tapez 'quit' pour quitter ce programme.
+=================================================================  
+                      Password Generator                           
+=================================================================  
+
+Bienvenue sur P-Gen,
+Ceci est un générateur de mot de passe aléatoire.
+
+Pour l'utiliser c'est très simple, laissez vous guider.
+Cela ne prend que quelques secondes !
+
+A tout moment, tapez 'quit' pour quitter ce programme.
+
+-----------------------------------------------------------------
   ```
   ### Utilisation
   ```bash
